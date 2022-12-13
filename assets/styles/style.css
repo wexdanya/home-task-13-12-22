@@ -1,0 +1,87 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+table{
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th{
+    width: 17.5%;
+    height: 120px;
+    color: white;
+}
+th>span{
+    font-size: 2em;
+}
+th:first-child{
+    width: 30%;
+    border-radius: 10px 0 0 0 ;
+    background-color: #7987ac;
+}
+
+th:nth-child(2){
+    background: #4f628d;
+}
+
+th:nth-child(3){
+    background: #2f4173;
+}
+
+th:nth-child(4){
+    background: #162954;
+}
+
+th:last-child{
+    border-radius: 0 10px 0 0 ;
+    background: #07153a;
+}
+
+td{
+    padding: 15px;
+}
+
+td:not(:first-child){
+    text-align: center;
+}
+
+tr:nth-child(odd)>td:nth-child(odd),
+tr:nth-child(even)>td:nth-child(even){
+background-color: #dbdbdb;
+}
+
+tr:nth-child(odd)>td:nth-child(even),
+tr:nth-child(even)>td:nth-child(odd){
+background-color: #f3f3f3;
+}
+
+a{
+ padding: .5em 2.8em;
+ border:1px solid black;
+ border-radius: 5px;
+ background:#dbdbdb;
+ cursor: pointer;
+ font-size: 1.2em;
+ box-sizing: border-box;
+}
+
+a:hover{
+    border:1px solid #2f4173;
+    color: white;
+    background: #2f4173;
+}
+
+tfoot{
+    height: 100px;
+}
+
+tfoot td:last-child{
+    border-radius:0 0 10px 0;
+}
+
+tfoot td:first-child{
+    border-radius:0 0 0 10px;
+}
